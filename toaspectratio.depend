@@ -34,3 +34,9 @@
 	<unistd.h>
 	<sys/wait.h>
 
+1644055457 source:/home/cajmorgan/Dropbox/Programming/C/toaspectratio/deps/install.c
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<sys/wait.h>
+
