@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1644045932 source:/home/cajmorgan/Dropbox/Programming/C/toaspectratio/toaspectratio/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	<math.h>
+
+1644052498 source:/home/cajmorgan/Dropbox/Programming/C/toaspectratio/toaspectratio/install.c
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<sys/wait.h>
+
+1644055133 source:/home/cajmorgan/Dropbox/Programming/C/toaspectratio/toaspectratio/deps/to_number.c
+	<stdbool.h>
+	<math.h>
+	<string.h>
+	"aspectratio.h"
+
+1644053712 /home/cajmorgan/Dropbox/Programming/C/toaspectratio/toaspectratio/deps/aspectratio.h
+
+1644055228 source:/home/cajmorgan/Dropbox/Programming/C/toaspectratio/toaspectratio/deps/toaspectratio.c
+	<stdio.h>
+	"aspectratio.h"
+
+1644055171 source:/home/cajmorgan/Dropbox/Programming/C/toaspectratio/toaspectratio/deps/checkaspectratio.c
+	<stdio.h>
+	"aspectratio.h"
+
+1644055457 source:/home/cajmorgan/Dropbox/Programming/C/toaspectratio/toaspectratio/deps/install.c
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<sys/wait.h>
+

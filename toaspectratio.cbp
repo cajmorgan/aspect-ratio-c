@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="toaspectratio" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/toaspectratio" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="toaspectratio">
+				<Option platforms="Unix;" />
+				<Option output="bin/Release/toaspectratio" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lm" />
+				</Linker>
+			</Target>
+			<Target title="Install">
+				<Option platforms="Unix;" />
+				<Option output="install" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="Install_mac">
+				<Option platforms="Mac;" />
+				<Option output="install-mac" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="icc" />
+				<Option use_console_runner="0" />
+			</Target>
+			<Target title="checkaspectratio">
+				<Option platforms="Unix;" />
+				<Option output="bin/Release/checkaspectratio" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-lm" />
+		</Linker>
+		<Unit filename="deps/aspectratio.h">
+			<Option target="toaspectratio" />
+			<Option target="checkaspectratio" />
+		</Unit>
+		<Unit filename="deps/checkaspectratio.c">
+			<Option compilerVar="CC" />
+			<Option target="checkaspectratio" />
+		</Unit>
+		<Unit filename="deps/install.c">
+			<Option compilerVar="CC" />
+			<Option target="Install" />
+			<Option target="Install_mac" />
+		</Unit>
+		<Unit filename="deps/to_number.c">
+			<Option compilerVar="CC" />
+			<Option target="toaspectratio" />
+			<Option target="checkaspectratio" />
+		</Unit>
+		<Unit filename="deps/toaspectratio.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="toaspectratio" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
