@@ -3,5 +3,4 @@
 
   double to_number(char *str);
 
-
 #endif // ASPECTRATIO_H_INCLUDED
